@@ -37,7 +37,7 @@ export class BuscarComponent implements OnInit {
     const heroe: Heroe = event.option.value;
     this.termino = heroe.superhero;
 
-    this.heroesService.getHeroeById( heroe.id )
+    this.heroesService.getHeroeById( heroe.id! )
       .subscribe( heroeClickeado => this.heroeSeleccionado = heroeClickeado);
 
   }

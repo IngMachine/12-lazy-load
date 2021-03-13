@@ -1,5 +1,5 @@
 export interface Heroe {
-    id: string;
+    id?: string;
     superhero: string;
     publisher: Publisher;
     alter_ego: string;
@@ -11,4 +11,9 @@ export interface Heroe {
 export enum Publisher {
     DCComics = 'DC Comics',
     MarvelComics = 'Marvel Comics',
+}
+
+export interface Publisher1 {
+    id: string;
+    desc: string;
 }
